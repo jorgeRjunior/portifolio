@@ -31,7 +31,7 @@ export default function Profile() {
               Cursando Bacharelado em Engenharia de Software
             </span>
             
-            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-5 pr-10 min-h-full">           
+            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-5 pr-10 min-h-full overflow-y-auto">           
             Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
             tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
             Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
@@ -42,7 +42,7 @@ export default function Profile() {
         </div>
       </div>
     <div className='flex flex-col '>
-      <div id="experiencias" className="border-[#41525b] border-4 rounded-[20px] min-h-[38vh] min-w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 pb-10 bg-slate-100 min-h-full">
+      <div id="experiencias" className="border-[#41525b] border-4 rounded-[20px] h-[38vh] w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 pb-10 bg-slate-100 min-h-full overflow-y-auto">
         <span className="flex text-3xl font-bold text-[#41525b] ">Experiências</span>
       
         <span className="flex text-[20px] font-bold text-[#8b9aab] font-light pt-5 text-justify">
@@ -53,7 +53,7 @@ export default function Profile() {
         </span>
       </div>
 
-      <div id="skills" className="flex border-[#41525b] border-4 rounded-[20px] min-h-[38vh] min-w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 mt-10 pb-10 bg-slate-100 min-h-full">
+      <div id="skills" className="flex border-[#41525b] border-4 rounded-[20px] h-[38vh] w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 mt-10 pb-10 bg-slate-100 min-h-full overflow-y-auto">
         
         <div id="hardskill" className='flex flex-col pr-[10%] '>
         <span className="flex flex-col text-3xl font-bold text-[#41525b] w-[20vw]">Hard Skill</span>
