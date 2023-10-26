@@ -31,7 +31,7 @@ export default function Profile() {
               Cursando Bacharelado em Engenharia de Software
             </span>
             
-            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-5 pr-10 text-justify overflow-y-auto">           
+            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-5 pr-10 overflow-y-auto">           
             Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
             tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
             Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
