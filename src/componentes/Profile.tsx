@@ -15,7 +15,7 @@ export default function Profile() {
   return (
     <div className="flex h-[30vh] ml-[10vw] mt-[3vw] gap-9">
       <div id="perfil" className=''>
-        <div className="flex flex-col h-[82vh] w-[20vw] rounded-[20px] border-[#41525b] border-4 bg-slate-100 min-w-[20rem]">
+        <div className="flex flex-col h-auto w-[20vw] rounded-[20px] border-[#41525b] border-4 bg-slate-100 min-w-[20rem]">
             <img src={profile} alt="Jorge" className="flex justify-center w-[80%] h-auto rounded-[50%] m-10 mt-5  border-[#41525b] border-4" />
             
             <span className="flex justify-center text-2xl font-bold text-[#111c25] mt-[-10px] ">Jorge Ruediger Junior</span>
@@ -31,7 +31,7 @@ export default function Profile() {
               Cursando Bacharelado em Engenharia de Software
             </span>
             
-            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-5 pr-10 min-h-full overflow-y-hidden">           
+            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-10 pr-10 text-justify ">           
             Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
             tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
             Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
@@ -42,7 +42,7 @@ export default function Profile() {
         </div>
       </div>
     <div className='flex flex-col '>
-      <div id="experiencias" className="border-[#41525b] border-4 rounded-[20px] min-h-[38vh] w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 pb-10 bg-slate-100 overflow-y-hidden">
+      <div id="experiencias" className="border-[#41525b] border-4 rounded-[20px] h-auto w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 pb-10 bg-slate-100">
         <span className="flex text-3xl font-bold text-[#41525b] ">Experiências</span>
       
         <span className="flex text-[20px] font-bold text-[#8b9aab] font-light pt-5 text-justify">
@@ -53,7 +53,7 @@ export default function Profile() {
         </span>
       </div>
 
-      <div id="skills" className="flex border-[#41525b] border-4 rounded-[20px] min-h-[38vh] w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 mt-10 pb-10 bg-slate-100 overflow-y-hidden">
+      <div id="skills" className="flex border-[#41525b] border-4 rounded-[20px] h-auto w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 mt-10 pb-10 bg-slate-100">
         
         <div id="hardskill" className='flex flex-col pr-[10%] '>
         <span className="flex flex-col text-3xl font-bold text-[#41525b] w-[20vw]">Hard Skill</span>
@@ -89,7 +89,7 @@ Busca constante por melhorias e expandir conjunto de habilidades
 
       </div>
 
-      <div id="sobre" className="flex absolute justify-center border-[#41525b] border-4 rounded-[20px] h-4 pb-6 pl-8 ml-5 pt-0 mt-[78vh] bg-slate-100">
+      <div id="sobre" className="flex justify-center border-[#41525b] border-4 rounded-[20px] h-4 pb-6 pl-8 ml-5 pt-0 bg-slate-100 mt-[10%]">
         <span className="flex text-[16px] text-[#8b9aab] font-light justify-center w-[48vw]">
        Site desenvolvido com <span className='pl-2 pr-2 text-red-400'> ♥ </span> em React + TailWindCSS
         </span>
