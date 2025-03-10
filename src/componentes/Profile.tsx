@@ -10,6 +10,7 @@ import {IoLogoCss3} from 'react-icons/io';
 import {TbJson} from 'react-icons/tb';
 import {SiJira} from 'react-icons/si';
 import {FaJava} from 'react-icons/fa';
+import {BiLogoAngular} from 'react-icons/bi';
 
 export default function Profile() {
   return (
@@ -34,6 +35,8 @@ export default function Profile() {
                 <FaJava className="w-6 h-6" />
                 <BiLogoJavascript className="w-6 h-6" />
                 <RiReactjsLine className="w-6 h-6" />
+                <BiLogoSpringBoot className="w-6 h-6" />
+                <BiLogoAngular className="w-6 h-6" />
               </div>
               
               <p className="text-center text-[#33546e] font-semibold mb-4">
@@ -42,7 +45,7 @@ export default function Profile() {
               
               <p className="text-gray-600 text-justify">
                 Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
-                tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
+                tenho 33 anos e atuo como programador há aproximadamente 4 anos. 
                 Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
                 Sou um entusiasta por tecnologia e inovação e estou sempre buscando expandir meus conhecimentos e habilidades.
               </p>
@@ -75,12 +78,20 @@ export default function Profile() {
                     <span className="text-xs mt-1">Java</span>
                   </div>
                   <div className="flex flex-col items-center">
+                    <BiLogoSpringBoot className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Spring Boot</span>
+                  </div>
+                  <div className="flex flex-col items-center">
                     <BiLogoJavascript className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
                     <span className="text-xs mt-1">JavaScript</span>
                   </div>
                   <div className="flex flex-col items-center">
                     <RiReactjsLine className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
                     <span className="text-xs mt-1">React</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <BiLogoAngular className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Angular</span>
                   </div>
                   <div className="flex flex-col items-center">
                     <BiLogoPython className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
@@ -135,11 +146,27 @@ export default function Profile() {
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Espírito de liderança
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Trabalho em equipe
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Comunicação eficaz
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Resolução de problemas
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
                     Interesse em aprender novas linguagens
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
-                    Ansiedade para aplicar conhecimento e habilidades
+                    Adaptabilidade
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
