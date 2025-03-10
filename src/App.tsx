@@ -21,6 +21,9 @@ function App() {
       
       <footer className="py-6 text-center text-gray-500 text-sm fade-in delay-300">
         <p>© {new Date().getFullYear()} Jorge Ruediger Junior. Todos os direitos reservados.</p>
+        <p className="text-gray-500">
+          Site desenvolvido com <span className="text-red-400">♥</span> em React + TailwindCSS
+        </p>
       </footer>
       
       <div

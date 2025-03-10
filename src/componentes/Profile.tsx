@@ -43,11 +43,11 @@ export default function Profile() {
                 Cursando Bacharelado em Engenharia de Software
               </p>
               
-              <p className="text-gray-600 text-justify">
-                Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
-                tenho 33 anos e atuo como programador há aproximadamente 4 anos. 
-                Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
-                Sou um entusiasta por tecnologia e inovação e estou sempre buscando expandir meus conhecimentos e habilidades.
+              <p className="text-gray-600 text-justify pb-4">
+                Natural de Blumenau-SC, tenho 34 anos e atuo como desenvolvedor de software há mais de 4 anos. 
+                Minha trajetória profissional é marcada pela paixão por resolver problemas complexos através da tecnologia. 
+                Quando não estou codificando, dedico meu tempo à família e ao meu hobby, que é jogar online com amigos. Estou constantemente aprimorando minhas habilidades 
+                e explorando novas ferramentas para criar soluções mais eficientes.
               </p>
             </div>
           </div>
@@ -58,11 +58,12 @@ export default function Profile() {
           {/* Experiências */}
           <div className="bg-white rounded-xl shadow-xl p-6 transform transition-all duration-300 hover:shadow-2xl">
             <h2 className="text-3xl font-bold text-[#2d3748] mb-4 border-b pb-2">Experiências</h2>
-            <p className="text-lg text-gray-600">
-              Profissional na área de Tecnologia da Informação, exercendo o papel de Desenvolvedor Full Stack Pleno. 
-              Desenvolvimento nas linguagens de programação Java, JavaScript (React) e Python. 
-              Experiência em desenvolvimento e modelagem de dados em vários bancos de dados, como Microsoft SQL, PostgreSQL, Oracle e MySQL. 
-              Ansioso para aplicar conhecimento e habilidades para enfrentar novos desafios.
+            
+            <p className="text-lg text-gray-600 mt-4">
+              Profissional na área de Tecnologia da Informação com mais de 4 anos de experiência, atualmente exercendo o papel de Tech Lead. 
+              Especializado em desenvolvimento Full Stack com foco em Java, JavaScript (React/Angular), e arquiteturas baseadas em microserviços.
+              Experiência sólida em modelagem e otimização de bancos de dados relacionais como SQL Server, PostgreSQL, Oracle e MySQL.
+              Habilidades em liderança técnica, mentoria de equipes e implementação de metodologias ágeis para entrega contínua de valor.
             </p>
           </div>
 
@@ -179,11 +180,94 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="mt-12 text-center">
-        <p className="text-gray-500">
-          Site desenvolvido com <span className="text-red-400">♥</span> em React + TailwindCSS
-        </p>
+      {/* Minha Jornada */}
+      <div className="bg-white rounded-xl shadow-xl p-6 mt-8 transform transition-all duration-300 hover:shadow-2xl">
+        <h2 className="text-3xl font-bold text-[#2d3748] mb-8 border-b pb-2">Minha Jornada</h2>
+        
+        <div className="space-y-8">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <div className="bg-gray-100 p-4 rounded-lg h-full">
+                <h3 className="text-xl font-semibold text-gray-800">Tech Lead</h3>
+                <p className="text-gray-600 font-medium">SpinCare · Tempo integral</p>
+                <p className="text-gray-500 text-sm">jul de 2024 - o momento · 9 meses</p>
+                <p className="text-gray-500 text-sm">Blumenau, Santa Catarina, Brasil · Híbrida</p>
+              </div>
+            </div>
+            <div className="md:w-3/4">
+              <p className="text-gray-600">
+                Além de desenvolver soluções técnicas, atuo como líder técnico auxiliando a equipe na tomada de decisões arquiteturais e estratégicas. Responsável pela alocação e priorização de tarefas, monitoramento do progresso dos projetos e facilitação de recursos necessários para o desenvolvimento eficiente. Promovo comunicação eficaz entre equipes e stakeholders, além de incentivar a melhoria contínua através de code reviews, pair programming e implementação de boas práticas de desenvolvimento. Trabalho com metodologias ágeis para garantir entregas de qualidade dentro dos prazos estabelecidos.
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <div className="bg-gray-100 p-4 rounded-lg h-full">
+                <h3 className="text-xl font-semibold text-gray-800">Desenvolvedor de Software Pleno</h3>
+                <p className="text-gray-600 font-medium">Edusoft Tecnologia · Tempo integral</p>
+                <p className="text-gray-500 text-sm">fev de 2024 - jun de 2024 · 5 meses</p>
+                <p className="text-gray-500 text-sm">Blumenau, Santa Catarina, Brasil · Híbrida</p>
+              </div>
+            </div>
+            <div className="md:w-3/4">
+              <p className="text-gray-600">
+                Atuei no desenvolvimento e manutenção de sistemas educacionais robustos utilizando Java como linguagem principal. Implementei novas funcionalidades e realizei melhorias significativas no software educacional da empresa, focando em performance e usabilidade. Trabalhei com JSP para criação de interfaces dinâmicas e responsivas, integrando-as com o backend Java. Participei ativamente de reuniões de planejamento e retrospectivas, contribuindo com ideias para aprimorar os processos de desenvolvimento e a qualidade do produto final entregue aos clientes do setor educacional.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Java</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">JSP (JavaServer Pages)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <div className="bg-gray-100 p-4 rounded-lg h-full">
+                <h3 className="text-xl font-semibold text-gray-800">Desenvolvedor de Software Pleno</h3>
+                <p className="text-gray-600 font-medium">Esquematika Ltda · Tempo integral</p>
+                <p className="text-gray-500 text-sm">jan de 2022 - fev de 2024 · 2 anos 2 meses</p>
+                <p className="text-gray-500 text-sm">Blumenau, Santa Catarina, Brasil</p>
+              </div>
+            </div>
+            <div className="md:w-3/4">
+              <p className="text-gray-600">
+                Trabalhei no desenvolvimento e evolução de um ERP especializado para o setor de construção civil, utilizando Java e JavaScript como principais tecnologias. Fui responsável pela criação de novos módulos e implementação de melhorias em funcionalidades existentes, sempre buscando otimizar a experiência do usuário e a eficiência do sistema. Desenvolvi serviços REST para integração com sistemas externos e aplicativos móveis, garantindo comunicação segura e eficiente. Elaborei relatórios complexos utilizando JasperStudio IReport, fornecendo insights valiosos para tomada de decisões dos clientes. Realizei modelagem e otimização de banco de dados SQL Server, assegurando performance e integridade dos dados em um sistema utilizado por empresas de grande porte do setor de construção.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">JSP (JavaServer Pages)</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Microsoft Windows</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Java</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">JavaScript</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">SQL Server</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/4">
+              <div className="bg-gray-100 p-4 rounded-lg h-full">
+                <h3 className="text-xl font-semibold text-gray-800">Engenheiro de software</h3>
+                <p className="text-gray-600 font-medium">Satty.com.br · Terceirizado</p>
+                <p className="text-gray-500 text-sm">ago de 2021 - mar de 2022 · 8 meses</p>
+                <p className="text-gray-500 text-sm">Maringá, Paraná, Brasil</p>
+              </div>
+            </div>
+            <div className="md:w-3/4">
+              <p className="text-gray-600">
+                Atuei como desenvolvedor terceirizado em projetos de e-commerce e sistemas de gestão, utilizando uma stack diversificada que incluía Java, React e Vue.js. Implementei soluções backend com Spring Boot, criando APIs RESTful escaláveis e seguras para suportar aplicações de alto tráfego. Desenvolvi interfaces modernas e responsivas com React e Vue.js, focando em usabilidade e acessibilidade. Trabalhei com modelagem e otimização de bancos de dados PostgreSQL, implementando consultas eficientes e garantindo a integridade dos dados. Participei de todo o ciclo de desenvolvimento, desde o levantamento de requisitos até a implantação em produção, seguindo metodologias ágeis e práticas de integração contínua.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Microsoft Windows</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Java</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">React</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Vue</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">SpringBoot</span>
+                <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

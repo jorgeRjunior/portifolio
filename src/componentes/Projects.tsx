@@ -83,7 +83,7 @@ export default function Projects() {
       description: "Meu site de portfólio pessoal desenvolvido com React e TailwindCSS.",
       technologies: ["React", "TypeScript", "TailwindCSS"],
       githubLink: "https://github.com/jorgeRjunior/portifolio",
-      image: "https://github.com/jorgeRjunior/portifolio/blob/master/src/componentes/img/portifolio.png"
+      image: "https://github.com/jorgeRjunior/portifolio/blob/master/src/componentes/img/portifolio.png?raw=true"
     },
     {
       title: "Xsd_to_class",
