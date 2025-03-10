@@ -13,90 +13,151 @@ import {FaJava} from 'react-icons/fa';
 
 export default function Profile() {
   return (
-    <div className="flex h-[30vh] ml-[10vw] mt-[3vw] gap-9">
-      <div id="perfil" className=''>
-        <div className="flex flex-col h-auto w-[20vw] rounded-[20px] border-[#41525b] border-4 bg-slate-100 min-w-[20rem]">
-            <img src={profile} alt="Jorge" className="flex justify-center w-[80%] h-auto rounded-[50%] m-10 mt-5  border-[#41525b] border-4" />
-            
-            <span className="flex justify-center text-2xl font-bold text-[#111c25] mt-[-10px] ">Jorge Ruediger Junior</span>
-            <span className="flex justify-center text-xl text-[#33546e]">Software Developer</span>
-            
-            <div className='flex justify-center text-[#33546e]'>
-              <FaJava className='flex mt-[2px] h-full ml-2'></FaJava>
-              <BiLogoJavascript className='mt-[2px] w-6 h-full ml-1'></BiLogoJavascript>
-              <RiReactjsLine className='mt-[2px] w-6 h-full ml-1'></RiReactjsLine>
+    <div className="container mx-auto px-4 py-12 max-w-6xl">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Perfil Card */}
+        <div className="lg:col-span-1">
+          <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+            <div className="bg-gradient-to-r from-[#2d3748] to-[#1a202c] pt-8 pb-4">
+              <img 
+                src={profile} 
+                alt="Jorge" 
+                className="w-40 h-40 object-cover mx-auto rounded-full border-4 border-white shadow-lg" 
+              />
             </div>
             
-            <span className="flex justify-center text-[16px] font-semibold text-[#33546e] pb-5 p-10 pt-5 text-center">           
-              Cursando Bacharelado em Engenharia de Software
-            </span>
-            
-            <span className="flex justify-left text-[16px] text-[#8b9aab] font-light pt-1 pl-10 pb-10 pr-10 text-justify ">           
-            Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
-            tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
-            Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
-            Sou um entusiasta por tecnologia e inovação e estou sempre buscando expandir meus conhecimentos e habilidades.
-            </span>
-
-
-        </div>
-      </div>
-    <div className='flex flex-col '>
-      <div id="experiencias" className="border-[#41525b] border-4 rounded-[20px] h-auto w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 pb-10 bg-slate-100">
-        <span className="flex text-3xl font-bold text-[#41525b] ">Experiências</span>
-      
-        <span className="flex text-[20px] font-bold text-[#8b9aab] font-light pt-5 text-justify">
-        Profissional na área de Tecnologia da Informação, exercendo o papel de Desenvolvedor Full Stack Pleno. 
-            Desenvolvimento nas linguagens de programação Java, JavaScript (React) e Python. 
-            Experiência em desenvolvimento e modelagem de dados em vários bancos de dados, como Microsoft SQL, PostgreSQL, Oracle e MySQL. 
-            Ansioso para aplicar conhecimento e habilidades para enfrentar novos desafios.
-        </span>
-      </div>
-
-      <div id="skills" className="flex border-[#41525b] border-4 rounded-[20px] h-auto w-[50vw] p-2 pl-8 ml-5 pr-10 pt-5 mt-10 pb-10 bg-slate-100">
-        
-        <div id="hardskill" className='flex flex-col pr-[10%] '>
-        <span className="flex flex-col text-3xl font-bold text-[#41525b] w-[20vw]">Hard Skill</span>
-        <span className="flex flex-row flex-wrap text-xl font-bold pt-5 gap-4 text-[#33546e] ">
-        <FaJava className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></FaJava>
-        <BiLogoJavascript className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BiLogoJavascript>
-        <RiReactjsLine className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></RiReactjsLine>
-        <BiLogoPython className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BiLogoPython>
-        <AiOutlineConsoleSql className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></AiOutlineConsoleSql>
-        <BiLogoPostgresql className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BiLogoPostgresql>
-        <GrOracle className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></GrOracle>
-        <SiMysql className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></SiMysql>
-        <AiFillHtml5 className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></AiFillHtml5>
-        <IoLogoCss3 className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></IoLogoCss3>
-        <TbJson className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></TbJson>
-        <BiSolidReport className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BiSolidReport>
-        <SiJira className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></SiJira>
-        <BsGithub className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BsGithub>
-        <BiLogoSpringBoot className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BiLogoSpringBoot>
-        <BsWordpress className='flex flex-row h-auto w-10 hover:animate-jiggle hover:text-[#5e9dc1]'></BsWordpress>
-        </span>
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-center text-gray-800">Jorge Ruediger Junior</h2>
+              <p className="text-xl text-center text-[#33546e] mb-2">Software Developer</p>
+              
+              <div className="flex justify-center gap-2 text-[#33546e] mb-4">
+                <FaJava className="w-6 h-6" />
+                <BiLogoJavascript className="w-6 h-6" />
+                <RiReactjsLine className="w-6 h-6" />
+              </div>
+              
+              <p className="text-center text-[#33546e] font-semibold mb-4">
+                Cursando Bacharelado em Engenharia de Software
+              </p>
+              
+              <p className="text-gray-600 text-justify">
+                Olá! Me chamo Jorge, sou natural de Blumenau-SC, 
+                tenho 32 anos e atuo como programador há aproximadamente 3 anos. 
+                Quando não estou trabalhando, gosto de passar tempo com minha família e jogar videogame. 
+                Sou um entusiasta por tecnologia e inovação e estou sempre buscando expandir meus conhecimentos e habilidades.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div id="softskill" className='flex flex-col'>
-        <span className="flex flex-col text-3xl font-bold text-[#41525b] ">Soft Skill</span>
-        <span className="flex flex-col text-xl pt-5 text-[#8b9aab]">
-        Proatividade, Dedicação,
-Interesse em aprender novas linguagens,
-Ansiedade para aplicar conhecimento e habilidades,
-Busca constante por melhorias e expandir conjunto de habilidades
-        </span>
+        {/* Experiências e Skills */}
+        <div className="lg:col-span-2 space-y-8">
+          {/* Experiências */}
+          <div className="bg-white rounded-xl shadow-xl p-6 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 className="text-3xl font-bold text-[#2d3748] mb-4 border-b pb-2">Experiências</h2>
+            <p className="text-lg text-gray-600">
+              Profissional na área de Tecnologia da Informação, exercendo o papel de Desenvolvedor Full Stack Pleno. 
+              Desenvolvimento nas linguagens de programação Java, JavaScript (React) e Python. 
+              Experiência em desenvolvimento e modelagem de dados em vários bancos de dados, como Microsoft SQL, PostgreSQL, Oracle e MySQL. 
+              Ansioso para aplicar conhecimento e habilidades para enfrentar novos desafios.
+            </p>
+          </div>
+
+          {/* Skills */}
+          <div className="bg-white rounded-xl shadow-xl p-6 transform transition-all duration-300 hover:shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Hard Skills */}
+              <div>
+                <h2 className="text-3xl font-bold text-[#2d3748] mb-4 border-b pb-2">Hard Skills</h2>
+                <div className="grid grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center">
+                    <FaJava className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Java</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <BiLogoJavascript className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">JavaScript</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <RiReactjsLine className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">React</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <BiLogoPython className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Python</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <AiOutlineConsoleSql className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">SQL</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <BiLogoPostgresql className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">PostgreSQL</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <GrOracle className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Oracle</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <SiMysql className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">MySQL</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <AiFillHtml5 className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">HTML5</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <IoLogoCss3 className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">CSS3</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <TbJson className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">JSON</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <BiSolidReport className="w-10 h-10 text-[#33546e] hover:text-[#5e9dc1] hover:animate-jiggle transition-colors duration-300" />
+                    <span className="text-xs mt-1">Reports</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Soft Skills */}
+              <div>
+                <h2 className="text-3xl font-bold text-[#2d3748] mb-4 border-b pb-2">Soft Skills</h2>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Proatividade
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Dedicação
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Interesse em aprender novas linguagens
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Ansiedade para aplicar conhecimento e habilidades
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-[#5e9dc1] rounded-full mr-2"></span>
+                    Busca constante por melhorias
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
 
-      <div id="sobre" className="flex justify-center border-[#41525b] border-4 rounded-[20px] h-4 pb-6 pl-8 ml-5 pt-0 bg-slate-100 mt-[10%]">
-        <span className="flex text-[16px] text-[#8b9aab] font-light justify-center w-[48vw]">
-       Site desenvolvido com <span className='pl-2 pr-2 text-red-400'> ♥ </span> em React + TailWindCSS
-        </span>
+      {/* Footer */}
+      <div className="mt-12 text-center">
+        <p className="text-gray-500">
+          Site desenvolvido com <span className="text-red-400">♥</span> em React + TailwindCSS
+        </p>
       </div>
-
-</div>
-  
     </div>
   );
 }

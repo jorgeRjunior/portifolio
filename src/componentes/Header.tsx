@@ -3,16 +3,23 @@ import { SiDevdotto } from "react-icons/si";
 
 export default function Header() {
   return (
-    <div className="flex pl-[10vw]  items-center gap-10 h-[8vh] w-[100vw] bg-[#353b47]">
-      <SiDevdotto className="flex flex-row  text-white h-10 w-10 hover:text-[#5e9dc1]"/> 
-      <span className="flex text-2xl text-white justify-start mb-1">Jorge Junior</span>
-      
-      <div className="flex justify-end w-[65vw] gap-10 pr-24">
-        <a href="https://www.linkedin.com/in/jorge-ruediger-junior/" target="_blank" rel="noopener noreferrer"><span className="flex text-2xl text-white"><AiFillLinkedin className="h-10 w-10 hover:text-[#5e9dc1]"></AiFillLinkedin></span></a>
-        <a href="https://github.com/jorgeRjunior" target="_blank" rel="noopener noreferrer"><span className="flex text-2xl text-white"><AiFillGithub className="h-10 w-10 hover:text-[#5e9dc1]"></AiFillGithub></span></a>
-        <a href="https://www.instagram.com/jorge.r.jr/" target="_blank" rel="noopener noreferrer"><span className="flex text-2xl text-white"><AiFillInstagram className="h-10 w-10 hover:text-[#5e9dc1]"></AiFillInstagram></span></a>
+    <div className="sticky top-0 z-50 flex items-center justify-between px-8 md:px-16 py-4 bg-gradient-to-r from-[#2d3748] to-[#1a202c] shadow-lg">
+      <div className="flex items-center gap-4">
+        <SiDevdotto className="text-white h-8 w-8 hover:text-[#5e9dc1] transition-all duration-300"/> 
+        <span className="text-2xl font-bold text-white">Jorge Junior</span>
       </div>
-
+      
+      <div className="flex gap-6">
+        <a href="https://www.linkedin.com/in/jorge-ruediger-junior/" target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform duration-300">
+          <AiFillLinkedin className="h-7 w-7 text-white hover:text-[#5e9dc1]"/>
+        </a>
+        <a href="https://github.com/jorgeRjunior" target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform duration-300">
+          <AiFillGithub className="h-7 w-7 text-white hover:text-[#5e9dc1]"/>
+        </a>
+        <a href="https://www.instagram.com/jorge.r.jr/" target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform duration-300">
+          <AiFillInstagram className="h-7 w-7 text-white hover:text-[#5e9dc1]"/>
+        </a>
+      </div>
     </div>
   );
 }
