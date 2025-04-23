@@ -79,6 +79,13 @@ const ProjectCard: React.FC<ProjectProps> = ({
 export default function Projects() {
   const projects: ProjectProps[] = [
     {
+      title: "3R Motors",
+      description: "Site de uma oficina especializada em remapeamento de carros.",
+      technologies: ["React", "TypeScript", "TailwindCSS", "PHP", "MySQL"],
+      liveLink: "https://3r-motors.vercel.app/",
+      image: "/img/3rmotors.png"
+    },
+    {
       title: "Portfólio Pessoal",
       description: "Meu site de portfólio pessoal desenvolvido com React e TailwindCSS.",
       technologies: ["React", "TypeScript", "TailwindCSS"],
@@ -99,14 +106,13 @@ export default function Projects() {
       githubLink: "https://github.com/jorgeRjunior/autoclick",
       image: "https://play-lh.googleusercontent.com/ymEyRZ2L55vaFJi29g5Epy5XB-brujerzwKJmYG8e1zmjxUXxJ1w7JQ3uLXX8_oe3fwS"
     },
-    // Adicione mais projetos conforme necessário
   ];
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl fade-in delay-200">
       <h2 className="text-3xl font-bold text-[#2d3748] mb-8 border-b pb-2">Projetos</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
